@@ -48,6 +48,26 @@
                                     <h:commandButton id="calEj4" value="Calcular" action="#{ejercicio4.calcularHip()}" />
                                 </h:panelGrid>
                             </p:tab>
+                            <p:tab title="Ejercicio5">
+                                <h:panelGrid columns="2">
+                                    <h:outputLabel for="r" value="Radio" />
+                                    <h:inputText value="#{ejercicio5.r}" />
+                                    <h:outputLabel for="h" value="Altura" />
+                                    <h:inputText value="#{ejercicio5.h}" />                                    
+                                    <h:commandButton id="calEj5" value="Calcular Volumen" action="#{ejercicio5.calcularVol()}" />
+                                    <h:commandButton id="calEj51" value="Calcular Área" action="#{ejercicio5.calcularArea()}" />
+                                </h:panelGrid>
+                            </p:tab>
+                            <p:tab title="Ejercicio6">
+                                <h:panelGrid columns="2">
+                                    <h:outputLabel for="r" value="Radio" />
+                                    <h:inputText value="#{ejercicio5.r}" />
+                                    <h:outputLabel for="h" value="Altura" />
+                                    <h:inputText value="#{ejercicio5.h}" />                                    
+                                    <h:commandButton id="calEj5" value="Calcular Volumen" action="#{ejercicio5.calcularVol()}" />
+                                    <h:commandButton id="calEj51" value="Calcular Área" action="#{ejercicio5.calcularArea()}" />
+                                </h:panelGrid>
+                            </p:tab>
                         </p:tabView>
                     </h:panelGrid>
                     

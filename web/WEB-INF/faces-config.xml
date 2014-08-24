@@ -22,6 +22,22 @@
         <from-outcome>success4</from-outcome>
         <to-view-id>/Resultado4.xhtml</to-view-id>
     </navigation-case>
+    <navigation-case>
+        <from-outcome>success5</from-outcome>
+        <to-view-id>/Resultado5.xhtml</to-view-id>
+    </navigation-case>
+    <navigation-case>
+        <from-outcome>success6</from-outcome>
+        <to-view-id>/Resultado6.xhtml</to-view-id>
+    </navigation-case>
+    <navigation-case>
+        <from-outcome>success7</from-outcome>
+        <to-view-id>/Resultado7.xhtml</to-view-id>
+    </navigation-case>
+    <navigation-case>
+        <from-outcome>success8</from-outcome>
+        <to-view-id>/Resultado8.xhtml</to-view-id>
+    </navigation-case>
  </navigation-rule>
 <navigation-rule>
     <from-view-id>/Resultado1.xhtml</from-view-id>        
@@ -42,6 +58,41 @@
     <navigation-case>
         <from-outcome>back</from-outcome>
         <to-view-id>/Inicio.xhtml</to-view-id>
+    </navigation-case>    
+</navigation-rule> 
+<navigation-rule>
+    <from-view-id>/Resultado4.xhtml</from-view-id>        
+    <navigation-case>
+        <from-outcome>back</from-outcome>
+        <to-view-id>/Inicio.xhtml</to-view-id>
     </navigation-case>
-</navigation-rule>    
+</navigation-rule>  
+<navigation-rule>
+    <from-view-id>/Resultado5.xhtml</from-view-id>        
+    <navigation-case>
+        <from-outcome>back</from-outcome>
+        <to-view-id>/Inicio.xhtml</to-view-id>
+    </navigation-case>
+</navigation-rule>
+<navigation-rule>
+    <from-view-id>/Resultado6.xhtml</from-view-id>        
+    <navigation-case>
+        <from-outcome>back</from-outcome>
+        <to-view-id>/Inicio.xhtml</to-view-id>
+    </navigation-case>
+</navigation-rule>
+<navigation-rule>
+    <from-view-id>/Resultado7.xhtml</from-view-id>        
+    <navigation-case>
+        <from-outcome>back</from-outcome>
+        <to-view-id>/Inicio.xhtml</to-view-id>
+    </navigation-case>
+</navigation-rule>
+<navigation-rule>
+    <from-view-id>/Resultado8.xhtml</from-view-id>        
+    <navigation-case>
+        <from-outcome>back</from-outcome>
+        <to-view-id>/Inicio.xhtml</to-view-id>
+    </navigation-case>
+</navigation-rule> 
 </faces-config>

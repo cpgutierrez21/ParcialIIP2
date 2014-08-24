@@ -7,11 +7,11 @@
 package parcial;
 
 import javax.inject.Named;
-import javax.enterprise.context.Dependent;
+import javax.enterprise.context.RequestScoped;
 
 
 @Named(value = "ejercicio4")
-@Dependent
+@RequestScoped
 public class Ejercicio4Bean {
  private double catA=0;
  private double catB=0;
@@ -20,12 +20,20 @@ public class Ejercicio4Bean {
     public void setCatA(double catA) {this.catA = catA;}
     public void setCatB(double catB) {this.catB = catB;}
 
+    public double getCatA() {
+        return catA;
+    }
+
+    public double getCatB() {
+        return catB;
+    }
+
     public double getResultado() {
         return resultado;
     } 
  
     public String calcularHip() {
-         resultado=Math.sqrt(catA+catB); 
+         resultado=Math.sqrt(Math.pow(catA, 2)+Math.pow(catB, 2)); 
          return "success4";
     }
     
