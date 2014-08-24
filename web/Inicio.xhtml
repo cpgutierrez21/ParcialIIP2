@@ -16,10 +16,10 @@
                             <p:tab title="Ejercicio1">
                                 <h:panelGrid columns="2">
                                     <h:outputLabel for="a" value="Número A" />
-                                    <h:inputText id="a" label="Número A" />
+                                    <h:inputText value="#{ejercicio1.a}" />
                                     <h:outputLabel for="b" value="Número B" />
-                                    <h:inputText id="b" label="Número B" />
-                                    <h:commandButton id="calEj1" value="Calcular" action="Ejercicio1" />
+                                    <h:inputText value="#{ejercicio1.b}" />
+                                    <h:commandButton id="calEj1" value="Calcular" action="#{ejercicio1.encontrarMayor()}" />
                                 </h:panelGrid>
                             </p:tab>
                         </p:tabView>
