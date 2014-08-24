@@ -38,7 +38,16 @@
                                     <h:outputLabel for="suma" value="Imprime la suma del 1 al 10" />                                    
                                     <h:commandButton id="calEj3" value="Calcular" action="#{ejercicio3.calcularSuma()}" />
                                 </h:panelGrid>
-                            </p:tab> 
+                            </p:tab>
+                            <p:tab title="Ejercicio4">
+                                <h:panelGrid columns="2">
+                                    <h:outputLabel for="catA" value="Cateto A" />
+                                    <h:inputText value="#{ejercicio4.catA}" />
+                                    <h:outputLabel for="catB" value="Cateto B" />
+                                    <h:inputText value="#{ejercicio4.catB}" />                                    
+                                    <h:commandButton id="calEj4" value="Calcular" action="#{ejercicio4.calcularHip()}" />
+                                </h:panelGrid>
+                            </p:tab>
                         </p:tabView>
                     </h:panelGrid>
                     

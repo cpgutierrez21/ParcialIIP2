@@ -10,14 +10,19 @@
         <from-outcome>success1</from-outcome>
         <to-view-id>/Resultado1.xhtml</to-view-id>
     </navigation-case>
-</navigation-rule> 
- <navigation-rule>
-    <from-view-id>/Inicio.xhtml</from-view-id>
     <navigation-case>
         <from-outcome>success2</from-outcome>
         <to-view-id>/Resultado2.xhtml</to-view-id>
     </navigation-case>
-</navigation-rule> 
+    <navigation-case>
+        <from-outcome>success3</from-outcome>
+        <to-view-id>/Resultado3.xhtml</to-view-id>
+    </navigation-case>
+    <navigation-case>
+        <from-outcome>success4</from-outcome>
+        <to-view-id>/Resultado4.xhtml</to-view-id>
+    </navigation-case>
+ </navigation-rule>
 <navigation-rule>
     <from-view-id>/Resultado1.xhtml</from-view-id>        
     <navigation-case>
@@ -31,5 +36,12 @@
         <from-outcome>back</from-outcome>
         <to-view-id>/Inicio.xhtml</to-view-id>
     </navigation-case>
-</navigation-rule>   
+</navigation-rule>
+<navigation-rule>
+    <from-view-id>/Resultado3.xhtml</from-view-id>        
+    <navigation-case>
+        <from-outcome>back</from-outcome>
+        <to-view-id>/Inicio.xhtml</to-view-id>
+    </navigation-case>
+</navigation-rule>    
 </faces-config>

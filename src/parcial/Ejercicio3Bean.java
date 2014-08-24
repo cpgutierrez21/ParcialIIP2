@@ -14,16 +14,18 @@ import javax.enterprise.context.Dependent;
 @Dependent
 public class Ejercicio3Bean {
 
-    private int n=0;
-    private int suma=0;    
+    int n=0;
+    private int suma=0;
+    private String resultado;
 
-    public int getSuma() {return suma;}
+    public String getResultado() {return resultado;}
 
     public String calcularSuma() {
         while(n<=10){            
             suma=suma+n;
-            n++;
-        }
+            n++;           
+        }       
+        resultado=String.valueOf(suma);
         return "success3";
     }
     

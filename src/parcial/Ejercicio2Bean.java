@@ -26,7 +26,7 @@ public class Ejercicio2Bean {
     public int getC(){return this.c;}
     public String gets(){return this.s;}
 
-    public Object encontrarMayor() {    
+    public String encontrarMayor() {    
         if (a>b && a>c){s="a es el mayor";}
         else if (b>a && b>c){s="b es el mayor";}
         else{s="c es el mayor";}
