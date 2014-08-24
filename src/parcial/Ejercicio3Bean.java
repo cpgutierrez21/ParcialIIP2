@@ -16,7 +16,7 @@ public class Ejercicio3Bean {
 
     int n=0;
     private int suma=0;
-    private String resultado;
+    private String resultado="55";
 
     public String getResultado() {return resultado;}
 
