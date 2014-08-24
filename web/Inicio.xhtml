@@ -10,20 +10,21 @@
     <ui:composition template="./template.xhtml" > 
             <ui:define name="top"> <h2>Parcial Parte 2</h2> </ui:define>
             <ui:define name="content">
-                <h:form>
-                <p:menubar id="menu">
-                    <p:submenu label="Ejercicios">
-                        <p:menuitem  value="Ejercicio1" url="/Ejercicio1.xhtml"></p:menuitem>
-                        <p:menuitem  value="Ejercicio2" url="/Ejercicio2.xhtml"></p:menuitem>
-                        <p:menuitem  value="Ejercicio3" url="/Ejercicio3.xhtml"></p:menuitem>
-                        <p:menuitem  value="Ejercicio4" url="/Ejercicio4.xhtml"></p:menuitem>
-                        <p:menuitem  value="Ejercicio5" url="/Ejercicio5.xhtml"></p:menuitem>
-                        <p:menuitem  value="Ejercicio6" url="/Ejercicio6.xhtml"></p:menuitem>
-                        <p:menuitem  value="Ejercicio7" url="/Ejercicio7.xhtml"></p:menuitem>
-                        <p:menuitem  value="Ejercicio8" url="/Ejercicio8.xhtml"></p:menuitem>
-                        
-                    </p:submenu>                           
-                </p:menubar>
+                <h:form>                                  
+                    <h:panelGrid columns="1" style="width: 100%">
+                        <p:tabView>
+                            <p:tab title="Ejercicio1">
+                                <h:panelGrid columns="2">
+                                    <h:outputLabel for="a" value="Número A" />
+                                    <h:inputText id="a" label="Número A" />
+                                    <h:outputLabel for="b" value="Número B" />
+                                    <h:inputText id="b" label="Número B" />
+                                    <h:commandButton id="calEj1" value="Calcular" action="Ejercicio1" />
+                                </h:panelGrid>
+                            </p:tab>
+                        </p:tabView>
+                    </h:panelGrid>
+                    
             </h:form>
             </ui:define>
         </ui:composition>    
