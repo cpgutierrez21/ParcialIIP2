@@ -22,6 +22,23 @@
                                     <h:commandButton id="calEj1" value="Calcular" action="#{ejercicio1.encontrarMayor()}" />
                                 </h:panelGrid>
                             </p:tab>
+                            <p:tab title="Ejercicio2">
+                                <h:panelGrid columns="2">
+                                    <h:outputLabel for="a" value="Número A" />
+                                    <h:inputText value="#{ejercicio2.a}" />
+                                    <h:outputLabel for="b" value="Número B" />
+                                    <h:inputText value="#{ejercicio2.b}" />
+                                    <h:outputLabel for="c" value="Número C" />
+                                    <h:inputText value="#{ejercicio2.c}" />
+                                    <h:commandButton id="calEj2" value="Calcular" action="#{ejercicio2.encontrarMayor()}" />
+                                </h:panelGrid>
+                            </p:tab>
+                            <p:tab title="Ejercicio3">
+                                <h:panelGrid columns="2">
+                                    <h:outputLabel for="suma" value="Imprime la suma del 1 al 10" />                                    
+                                    <h:commandButton id="calEj3" value="Calcular" action="#{ejercicio3.calcularSuma()}" />
+                                </h:panelGrid>
+                            </p:tab> 
                         </p:tabView>
                     </h:panelGrid>
                     
